@@ -70,6 +70,11 @@ public class ClickParaSeleccionarUnidadAAtacar implements EventHandler<ActionEve
 			AlertaDistanciaInvalida alertaDistanciaInvalida = new AlertaDistanciaInvalida();
 			alertaDistanciaInvalida.mostrarAlerta();
 
+		} catch (CatapultaNoPuedeSerCuradaException e) {
+			
+			AlertaCatapultaNoPuedeSerCurada alertaCatapultaNoPuedeSerCurada = new AlertaCatapultaNoPuedeSerCurada();
+			alertaCatapultaNoPuedeSerCurada.mostrarAlerta();
+			
 		} finally {
 
 			this.tablero.actualizarTablero();
