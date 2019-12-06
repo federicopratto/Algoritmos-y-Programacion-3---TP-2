@@ -13,5 +13,4 @@ notifications:
   email:
     recipients:
       - fpratto@fi.uba.ar
-      - jdicomo@fi.uba.ar
     on_failure: always
